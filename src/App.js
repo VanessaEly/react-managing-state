@@ -24,7 +24,7 @@ class App extends Component {
         <div className="game">
           <h2>Mental Math</h2>
           <Game setScore={this.calculateScore}/>
-		  <p className="text">
+		      <p className="text">
           	Your Score: {this.state.numCorrect}/{this.state.numQuestions}
           </p>
         </div>

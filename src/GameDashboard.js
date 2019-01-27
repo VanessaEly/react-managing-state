@@ -13,7 +13,7 @@ class Game extends Component {
       Math.floor(Math.random() * 100),
     ];
     return {
-      	value1: values[0],
+      value1: values[0],
     	value2: values[1],
     	value3: values[2],
     	proposedAnswer: Math.floor(Math.random() * 3) + (values[0] + values[1] + values[2]),
@@ -33,11 +33,11 @@ class Game extends Component {
     return (
       <div>
         <div className="equation">
-              <p className="text">{`${this.state.value1} + ${this.state.value2} + ${this.state.value3} = ${this.state.proposedAnswer}`}</p>
+          <p className="text">{`${this.state.value1} + ${this.state.value2} + ${this.state.value3} = ${this.state.proposedAnswer}`}</p>
         </div>
         <button onClick={() => this.updateDashboard(true)}>True</button>
         <button onClick={() => this.updateDashboard(false)}>False</button>
-	  </div>
+	    </div>
     );
   }
 }
