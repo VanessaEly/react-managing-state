@@ -24,7 +24,7 @@ class Game extends Component {
     // checking if the answer the user clicked is correct
     const answerIsCorrect = answer === (sum === this.state.proposedAnswer);
     // calling parent component method 'setScore', which is responsible for updating the
-    // user score considering it the answer was correct or not
+    // user score considering if the answer was correct or not
     this.props.setScore(answerIsCorrect);
     // updating the state using the object returned from makeNewQuestion function
     this.setState(currState => (this.makeNewQuestion()));
